@@ -1,0 +1,35 @@
+img {
+  width: 350px;
+  height: 400px;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.movies {
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 60px 100px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 0px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.details-movie {
+  width: 80%;
+  margin: 5%;
+  height: 30%;
+  text-align: center;
+  padding: 5%;
+}
+.btn-space {
+  margin-right: 5px;
+}
+
+body {
+  background-color: #ffff;
+}
