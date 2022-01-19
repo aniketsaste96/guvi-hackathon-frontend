@@ -2,7 +2,6 @@ import { Route, Switch } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { useState } from 'react'
 import Slider from './Slider'
-import './app.css'
 import Signup from './componants/Signup'
 // import Login from './componants/Login'
 import AdminInsert from './Admin/AdminInsert'
