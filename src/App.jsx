@@ -32,18 +32,20 @@ function App() {
               <>  </>
             ) : ( */}
 
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            {user && user._id ? (
+      {/* {user && user._id ? (
               <>
-                <Navbar setLoginUser={setLoginUser} />
-                <Slider />
-                <BookMovies />
+                <Theater />
               </>
             ) : (
               <Login setLoginUser={setLoginUser} />
-            )}
+            )} */}
+
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Navbar setLoginUser={setLoginUser} />
+            <Slider />
+            <BookMovies />
           </Route>
           <Route path="/login">
             <Login setLoginUser={setLoginUser} />
@@ -55,13 +57,7 @@ function App() {
             <Signup />
           </Route>
           <Route exact path="/Booking">
-            {user && user._id ? (
-              <>
-                <Signup />
-              </>
-            ) : (
-              <Login setLoginUser={setLoginUser} />
-            )}
+            <Signup />
           </Route>
           <Route exact path="/Details/:id">
             <Details />
@@ -70,15 +66,11 @@ function App() {
             <BookMovies />
           </Route>
           <Route exact path="/theater">
-            {user && user._id ? (
-              <>
-                <Theater />
-              </>
-            ) : (
-              <Login setLoginUser={setLoginUser} />
-            )}
+            <Theater />
           </Route>
-          <Route exact path="/user/feedback"></Route>
+          <Route exact path="/user/feedback">
+            <Feedbacks />
+          </Route>
           <Route exact path="/admin/feedback">
             <Feedbacks />
           </Route>
@@ -95,7 +87,7 @@ function App() {
             <Feedbacks />
           </Route>
           <Route exact path="/FeedbackPage">
-            <Login setLoginUser={setLoginUser} />
+            <FeedbackPage />
           </Route>
         </Switch>
       </Router>

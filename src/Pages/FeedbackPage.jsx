@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory, useLocation, Link } from "react-router-dom";
 import { useState } from "react";
+import "./feedback.css";
 const FeedbackPage = () => {
   const [feedback, setFeedback] = useState({
     textarea: "",
