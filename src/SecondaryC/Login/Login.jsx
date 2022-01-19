@@ -21,7 +21,7 @@ const Login = ({ setLoginUser }) => {
 
   const login = () => {
     axios
-      .post("https://guvi-hackathon-2.herokuapp.com/login", user)
+      .post("https://backendhackathon.herokuapp.com/login", user)
       .then((res) => {
         alert(res.data.message);
         setLoginUser(res.data.user);

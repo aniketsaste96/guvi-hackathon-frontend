@@ -26,7 +26,7 @@ const Register = () => {
     if (name && email && password && password === reenterpassword) {
       // alert("posted");
       axios
-        .post("http://localhost:9002/register", user)
+        .post("https://backendhackathon.herokuapp.com/register", user)
         //.then cz promiss based response
         .then((res) => alert(res.data.message));
     } else {
