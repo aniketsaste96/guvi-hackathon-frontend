@@ -20,11 +20,13 @@ const Login = ({ setLoginUser }) => {
   };
 
   const login = () => {
-    axios.post("http://localhost:8000/login", user).then((res) => {
-      alert(res.data.message);
-      setLoginUser(res.data.user);
-      history.push("/");
-    });
+    axios
+      .post("https://guvi-hackathon-2.herokuapp.com/login", user)
+      .then((res) => {
+        alert(res.data.message);
+        setLoginUser(res.data.user);
+        history.push("/");
+      });
   };
 
   return (
