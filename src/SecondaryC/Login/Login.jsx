@@ -20,13 +20,11 @@ const Login = ({ setLoginUser }) => {
   };
 
   const login = () => {
-    axios
-      .post("https://hacthaonreact.herokuapp.com/login", user)
-      .then((res) => {
-        alert(res.data.message);
-        setLoginUser(res.data.user);
-        history.push("/");
-      });
+    axios.post("http://localhost:8000/login", user).then((res) => {
+      alert(res.data.message);
+      setLoginUser(res.data.user);
+      history.push("/");
+    });
   };
 
   return (
