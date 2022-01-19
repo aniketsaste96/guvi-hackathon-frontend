@@ -28,13 +28,22 @@ function App() {
       {/* <FeedbackPage /> */}
       {/* <AdminHome /> */}
       {/* <Theater /> */}
+      {/* {user && user._id ? (
+              <>  </>
+            ) : ( */}
 
       <Router>
         <Switch>
           <Route exact path="/">
-            <Navbar setLoginUser={setLoginUser} />
-            <Slider />
-            <BookMovies />
+            {user && user._id ? (
+              <>
+                <Navbar setLoginUser={setLoginUser} />
+                <Slider />
+                <BookMovies />
+              </>
+            ) : (
+              <Login setLoginUser={setLoginUser} />
+            )}
           </Route>
           <Route path="/login">
             <Login setLoginUser={setLoginUser} />
@@ -55,13 +64,7 @@ function App() {
             )}
           </Route>
           <Route exact path="/Details/:id">
-            {user && user._id ? (
-              <>
-                <Details />
-              </>
-            ) : (
-              <Login setLoginUser={setLoginUser} />
-            )}
+            <Details />
           </Route>
           <Route exact path="/trending">
             <BookMovies />
@@ -77,31 +80,13 @@ function App() {
           </Route>
           <Route exact path="/user/feedback"></Route>
           <Route exact path="/admin/feedback">
-            {user && user._id ? (
-              <>
-                <Feedbacks />
-              </>
-            ) : (
-              <Login setLoginUser={setLoginUser} />
-            )}
+            <Feedbacks />
           </Route>
           <Route exact path="/AdminHome">
-            {user && user._id ? (
-              <>
-                <AdminHome />
-              </>
-            ) : (
-              <Login setLoginUser={setLoginUser} />
-            )}
+            <AdminHome />
           </Route>
           <Route exact path="/AdminInsert">
-            {user && user._id ? (
-              <>
-                <AdminInsert />
-              </>
-            ) : (
-              <Login setLoginUser={setLoginUser} />
-            )}
+            <AdminInsert />
           </Route>
           <Route exact path="/TotalBookings">
             <TotalBookings />
@@ -110,13 +95,7 @@ function App() {
             <Feedbacks />
           </Route>
           <Route exact path="/FeedbackPage">
-            {user && user._id ? (
-              <>
-                <FeedbackPage />
-              </>
-            ) : (
-              <Login setLoginUser={setLoginUser} />
-            )}
+            <Login setLoginUser={setLoginUser} />
           </Route>
         </Switch>
       </Router>
