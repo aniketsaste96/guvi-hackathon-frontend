@@ -42,13 +42,13 @@ export function Details() {
       </h3>
       <button
         className="btn btn-success  btn-space"
-        onClick={() => history.goBack("./Shows")}
+        onClick={() => history.goBack("/Shows")}
       >
         Go Back
       </button>
       <button
         className="btn btn-primary"
-        onClick={() => history.push("/Login")}
+        onClick={() => history.push("/Theater")}
       >
         Book Now
       </button>

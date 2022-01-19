@@ -1,0 +1,19 @@
+Login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.userFeedback {
+  margin-left: 35%;
+  margin-top: 5%;
+}
+.userfeed {
+  font-size: 20px;
+  font-weight: bold;
+}

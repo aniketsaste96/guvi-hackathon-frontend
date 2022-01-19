@@ -11,13 +11,13 @@ function Slider() {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://in.bmscdn.com/promotions/cms/creatives/1641189495411_1638331721816_1240x300freeaccessbannercopy.png" class="d-block w-100" alt="..." />
+                        <img src="https://in.bmscdn.com/promotions/cms/creatives/1641905846622_amazon.png" class="d-block w-100 h-100" alt="bookmyshowimage" />
                     </div>
                     <div class="carousel-item">
-                        <img src="https://in.bmscdn.com/promotions/cms/creatives/1641894791882_webbas.jpg" class="d-block w-100" alt="..." />
+                        <img src="https://in.bmscdn.com/promotions/cms/creatives/1641894791882_webbas.jpg" class="d-block w-100 h-100" alt="bookmyshowimage" />
                     </div>
                     <div class="carousel-item">
-                        <img src="https://in.bmscdn.com/promotions/cms/creatives/1642404214035_1635399009148_inoxbannerdesktop.jpg" class="d-block w-100" alt="..." />
+                        <img src="https://in.bmscdn.com/promotions/cms/creatives/1642404214035_1635399009148_inoxbannerdesktop.jpg" class="d-block w-100 h-100" alt="bookmyshowimage" />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
